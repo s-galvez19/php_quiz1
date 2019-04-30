@@ -1,2 +1,0 @@
-<?php
-$bottles = 99

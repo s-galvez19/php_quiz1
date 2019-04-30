@@ -1,12 +1,30 @@
-<?php
-$bottles = 99;
-    while ($bottles > 0) {
-        echo "$bottles bottles of beer on the wall, ";
-        echo "$bottles bottles of beer, ";
-        echo "take one down and pass it around<br>";
-        $bottles--;
-    }
-    if($bottles < 1) {
-        echo "</p>No more bottles of beer on the wall, no more bottles of beer. Go to the store and buy some more, 99 bottles of beer on the wall.";    
-    }
-    ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multiplication table </title>
+</head>
+<body>
+
+<h2>Multiplication Table</h2>
+ 
+ <?php
+ 
+ echo "<table border=\"2\">" ;
+  
+
+ for ($row=1; $row<=7; $row++){
+   echo "<tr>\n";
+   for ($col=1; $col<=7; $col++){
+     $x=$col * $row;   
+     echo "<td>$x</td>\n";
+   }
+   echo "</tr>";
+ }
+    echo "</table>";
+
+ ?>
+</body>
+</html>
